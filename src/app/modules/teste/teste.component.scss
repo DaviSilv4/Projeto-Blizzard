@@ -1,0 +1,52 @@
+ul{
+  list-style: none;
+}
+
+section{
+  background-image: url("/assets/teste/bg-banner.jpg");
+}
+
+.container{
+  padding-top: 100px;
+  color: #fff;
+}
+
+.content{
+  &__text{
+
+    h1{
+      font-size: 40px;
+      line-height: 1.2;
+      margin: 0;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    p{
+      font-size: 18px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    &--button{
+      background-color: #00AEFF;
+      color: #fff;
+      border: 0;
+      border-radius:5px;
+      height: 52px;
+      width: 168px;
+      margin-bottom: 48px;
+      font-weight: 600;
+      margin-top: 32px;
+    }
+
+    &--list{
+      ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 68px;
+      }
+    }
+  }
+}
