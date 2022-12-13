@@ -1,5 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+
 import { JogosModel } from '../model/jogos.model';
 
 @Injectable({
@@ -11,7 +14,7 @@ export class JogosService {
 
   constructor(private http: HttpClient) { }
 
-  public getJogos(){
-    this.http.get('https://api.brchallenges.com/api/blizzard/games').subscribe();
+  public getJogos(): Observable<any> {
+    return this.http.get('https://api.brchallenges.com/api/blizzard/games');
   }
 }

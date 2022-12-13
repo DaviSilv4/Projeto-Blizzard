@@ -1,5 +1,11 @@
-.container{
+header{
   position: absolute;
+  width: 100%;
+}
+
+.teste{
+  position: absolute;
+  width: 100%;
 }
 
 .content{
@@ -7,4 +13,26 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+
+  &__logar{
+
+    &--button-criar-conta{
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius:5px;
+      height: 41px;
+      width: 115px;
+      margin-right: 16px;
+    }
+    
+    &--button-login{
+      background-color: #00AEFF;
+      color: #fff;
+      border: 0;
+      border-radius:5px;
+      height: 41px;
+      width: 115px;
+    }
+  }
 }

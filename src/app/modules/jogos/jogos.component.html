@@ -10,8 +10,9 @@
       </div>
     </div>
     <div class="content__games">
-      <img src="assets/jogos/bg (1).png" alt="">
-      <img src="assets/jogos/bg.png" alt="">
+      <img *ngFor="let game of jogos" [src]='game.image' alt="">
     </div>
   </section>
 </main>
+
+

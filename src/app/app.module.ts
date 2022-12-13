@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header/header.module';
 import { JogosModule } from './modules/jogos/jogos.module';
 import { TesteModule } from './modules/teste/teste.module';
+import { FooterModule } from './modules/footer/footer.module';
+import { LoginModule } from './modules/login/login.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TesteModule } from './modules/teste/teste.module';
     HeaderModule,
     TesteModule,
     JogosModule,
-    HttpClientModule,
+    FooterModule,
+    LoginModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

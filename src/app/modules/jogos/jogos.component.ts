@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { map, tap } from 'rxjs';
+
+import { JogosModel } from './model/jogos.model';
 import { JogosService } from './service/jogos.service';
 
 @Component({
@@ -8,10 +11,20 @@ import { JogosService } from './service/jogos.service';
 })
 export class JogosComponent implements OnInit {
 
+  jogos!: JogosModel | any
+
   constructor(private jogosService: JogosService) { }
 
   ngOnInit() {
-    this.jogosService.getJogos();
+    this.listaDeJogos();
+  }
+
+  public listaDeJogos() {
+    this.jogosService.getJogos().pipe(
+      tap(res => {
+        this.jogos = res;
+      })
+    ).subscribe();
   }
 
 }

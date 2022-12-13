@@ -1,13 +1,19 @@
-<header class="container">
-  <div class="content">
-    <div class="content__logo">
-      <a>
-        <img [src]="content.headerLogo" alt="">
-      </a>
+<header>
+  <div class="container">
+    <div class="content">
+      <div class="content__logo">
+        <a>
+          <img [src]="content.headerLogo" alt="">
+        </a>
+      </div>
+      <div class="content__logar d-none d-sm-block">
+        <button class="content__logar--button-criar-conta">Criar conta</button>
+        <button class="content__logar--button-login">Logar</button>
+      </div>
+      <div class="content__menu">
+        <img [src]="content.menu" alt="" (click)="teste()">
+      </div>
     </div>
-    <div class="content__menu">
-      <img [src]="content.menu" alt="">
-    </div>
+    <hr>
   </div>
-  <hr>
 </header>

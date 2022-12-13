@@ -32,42 +32,50 @@ export class TesteComponent implements OnInit {
           title: 'Retorne à escuridão com o game Diablo IV',
           subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
           button: 'Jogue agora',
-          imageGame: 'assets/teste/diabloIV.png'
+          imageGame: 'assets/teste/diabloIV.png',
+          listGame: [
+            
+          ]
         };
-        case Test.HEARTHSTONE:
-        return {
-          title: 'Retorne à escuridão com o game Diablo IV',
-          subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
-          button: 'Jogue agora',
-          imageGame: 'assets/teste/heartstone.png'
-        };
-        case Test.WAR_CRAFT:
-        return {
-          title: 'Retorne à escuridão com o game Diablo IV',
-          subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
-          button: 'Jogue agora',
-          imageGame: 'assets/teste/warcraft.png'
-        };
-        case Test.DIABLO:
-        return {
-          title: 'Retorne à escuridão com o game Diablo IV',
-          subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
-          button: 'Jogue agora',
-          imageGame: 'assets/teste/diablo.png'
-        };
-        case Test.STAR_CRAFT:
-        return {
-          title: 'Retorne à escuridão com o game Diablo IV',
-          subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
-          button: 'Jogue agora',
-          imageGame: 'assets/teste/starcraft.png'
-        };
+        // case Test.HEARTHSTONE:
+        // return {
+        //   title: 'Retorne à escuridão com o game Diablo IV',
+        //   subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
+        //   button: 'Jogue agora',
+        //   imageGame: 'assets/teste/heartstone.png',
+
+        // };
+        // case Test.WAR_CRAFT:
+        // return {
+        //   title: 'Retorne à escuridão com o game Diablo IV',
+        //   subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
+        //   button: 'Jogue agora',
+        //   imageGame: 'assets/teste/warcraft.png'
+        // };
+        // case Test.DIABLO:
+        // return {
+        //   title: 'Retorne à escuridão com o game Diablo IV',
+        //   subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
+        //   button: 'Jogue agora',
+        //   imageGame: 'assets/teste/diablo.png'
+        // };
+        // case Test.STAR_CRAFT:
+        // return {
+        //   title: 'Retorne à escuridão com o game Diablo IV',
+        //   subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
+        //   button: 'Jogue agora',
+        //   imageGame: 'assets/teste/starcraft.png'
+        // };
         default:
           return {
             title: 'Retorne à escuridão com o game Diablo IV',
             subTitle: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
             button: 'Jogue agora',
-            imageGame: ''
+            imageGame: '',
+            listGame: [
+
+
+            ]
           }
       }
 

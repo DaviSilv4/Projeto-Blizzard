@@ -1,9 +1,13 @@
-ul{
-  list-style: none;
+main{
+  // background-image: url("/assets/teste/bg-banner.jpg");
+  background-image: url("/assets/teste/bg-banner-tablet.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-section{
-  background-image: url("/assets/teste/bg-banner.jpg");
+.teste{
+  max-width: 100%;
 }
 
 .container{
@@ -20,6 +24,11 @@ section{
       margin: 0;
       margin-bottom: 16px;
       font-weight: 700;
+      width: 80%;
+
+      @media (min-width: 768px) {
+        font-size: 64px;
+      }
     }
 
     p{
@@ -46,6 +55,13 @@ section{
         padding: 0;
         margin: 0;
         padding-bottom: 68px;
+
+        li{
+          margin-right: 16px;
+        }
+        li:last-child{
+          margin: 0;
+        }
       }
     }
   }
